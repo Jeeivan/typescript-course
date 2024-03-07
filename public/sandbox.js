@@ -1,11 +1,18 @@
 "use strict";
 let greet;
-// greet = "hello"
-greet = () => {
-    console.log("Hello, again");
+greet = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
 };
-const add = (a, b, c = 10) => {
-    console.log(a + b);
-    console.log(c);
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === "add") {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
 };
-add(5, 10);
+let logDetails;
+logDetails = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+};
